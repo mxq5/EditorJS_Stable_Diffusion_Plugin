@@ -1,0 +1,39 @@
+/**
+ * Plugin styles
+ */
+ .ce-stable-diffusion {
+  padding: 0.6em 0 3px;
+  margin: 0;
+  line-height: 1.25em;
+  outline: none;
+  font-style: oblique !important;
+  font-size: 16pt;
+}
+
+.ce-stable-diffusion p,
+.ce-stable-diffusion div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/**
+ * Styles for Plugin icon in Toolbar
+ */
+
+.ce-stable-diffusion[contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684 !important;
+  font-weight: normal;
+  display: none;
+  cursor: text;
+  font-style: oblique;
+}
+
+.ce-stable-diffusion[contentEditable=true][data-placeholder]:empty::before {
+  display: block;
+}
+
+.ce-stable-diffusion[contentEditable=true][data-placeholder]:empty:focus::before {
+  display: none;
+}
