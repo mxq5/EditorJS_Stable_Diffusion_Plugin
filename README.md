@@ -62,7 +62,7 @@ const getStableDiffusionImage = async (prompt) => {
             sampler_name: 'Euler a'
         });
 
-        if(response.data.status !== "OK") return console.log("Stable Diffusion couldn't render an image", "Error");
+        if(response.data.status !== "OK") return console.log("Error Stable Diffusion couldn't render an image");
 
         return {
             file: { url: response.data },
